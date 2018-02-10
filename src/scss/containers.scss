@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+@media (min-width: 1440px) {
+    .primary-container {
+        width: 1280px;
+    }
+}
+
 @media (max-width: 1024px) {
     .primary-container {
         width: 100%;
