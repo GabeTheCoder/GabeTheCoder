@@ -10,10 +10,10 @@
                         <ul>
                             <li><a href="https://www.google.com"><div class="social-item fb"></div></a></li>
                             <li><a href="https://www.google.com"><div class="social-item yt"></div></a></li>
-                            <li><a href="https://www.google.com"><div class="social-item facebook"></div></a></li>
-                            <li><a href="https://www.google.com"><div class="social-item facebook"></div></a></li>
-                            <li><a href="https://www.google.com"><div class="social-item facebook"></div></a></li>
-                            <li><a href="https://www.google.com"><div class="social-item facebook"></div></a></li>
+                            <li><a href="https://www.google.com"><div class="social-item insta"></div></a></li>
+                            <li><a href="https://www.google.com"><div class="social-item twtr"></div></a></li>
+                            <li><a href="https://www.google.com"><div class="social-item in"></div></a></li>
+                            <li><a href="https://www.google.com"><div class="social-item github"></div></a></li>
                         </ul>
                     </div>
                     <div class="links">

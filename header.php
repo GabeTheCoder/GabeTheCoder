@@ -11,9 +11,9 @@
 </head>
 <body>
 
-    <header>
+    <header id="header">
         <div class="primary-container">
-            <nav id="navigation">
+            <nav>
                 <a href="/"><div class="title">Gabe The Coder</div></a>
                 <button class="toggle-menu" onclick="toggleMenu()"></button>
                 <ul>
@@ -21,10 +21,11 @@
                     <li><a href="/about">About</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
+                <div class="clear"></div>
 
                 <script>
                     function toggleMenu() {
-                        var navTitle = document.getElementById('navigation');
+                        var navTitle = document.getElementById('header');
                         navTitle.classList.toggle('toggled');
                     }
                 </script>

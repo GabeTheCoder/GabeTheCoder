@@ -54,25 +54,35 @@ header {
 }
 
 @media (max-width: 760px) {
-    header nav {
-        ul {
-            display: none;
-            float: left;
+    header {
+        nav {
+            ul {
+                float: left;
+                display: none;
+                width: 200px;
+                height: auto;
+    
+                li {
+                    display: block;
+                }
+            }
+            .toggle-menu {
+                display: block;
+                background-image: url('images/menu.svg');
+            }
         }
-        .toggle-menu {
-            display: block;
-            background-image: url('images/menu.svg');
-        }
+        
     }
-    header nav.toggled {
-        .title {
-            display: none;
-        }
-        ul {
-            display: block;
-        }
-        .toggle-menu {
-            background-image: url('images/menu-close.svg');
+    header.toggled {
+        height: auto;
+
+        nav {
+            ul {
+                display: block;
+            }
+            .toggle-menu {
+                background-image: url('images/menu-close.svg');
+            }
         }
     }
 }

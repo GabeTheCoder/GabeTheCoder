@@ -18,6 +18,7 @@ footer {
 
     .content {
         display: flex;
+        flex-direction: row;
         margin-top: 36px;
         margin-bottom: 36px;
 
@@ -93,6 +94,9 @@ footer {
     }
 
     .contact {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
         .text-field {
             float: left;
             width: 50%;
@@ -162,12 +166,14 @@ footer {
 }
 
 @media (max-width: 960px) {
-    .content {
-        display: block;
-        background: #000;
-
+    footer .content {
+        flex-direction: column;
+        
         .column {
             width: 100%;
+            
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 }

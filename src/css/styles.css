@@ -94,17 +94,21 @@ header {
 
 @media (max-width: 760px) {
   header nav ul {
+    float: left;
     display: none;
-    float: left; }
+    width: 200px;
+    height: auto; }
+    header nav ul li {
+      display: block; }
   header nav .toggle-menu {
     display: block;
     background-image: url("images/menu.svg"); }
-  header nav.toggled .title {
-    display: none; }
-  header nav.toggled ul {
-    display: block; }
-  header nav.toggled .toggle-menu {
-    background-image: url("images/menu-close.svg"); } }
+  header.toggled {
+    height: auto; }
+    header.toggled nav ul {
+      display: block; }
+    header.toggled nav .toggle-menu {
+      background-image: url("images/menu-close.svg"); } }
 
 footer {
   width: 100%;
@@ -122,6 +126,7 @@ footer {
     text-transform: uppercase; }
   footer .content {
     display: flex;
+    flex-direction: row;
     margin-top: 36px;
     margin-bottom: 36px; }
     footer .content .column {
@@ -182,73 +187,76 @@ footer {
         transition: opacity 0.3s; }
       footer .links ul li a:hover {
         opacity: 1.0; }
-  footer .contact .text-field {
-    float: left;
-    width: 50%;
-    padding-left: 6px;
-    padding-right: 0px;
-    box-sizing: border-box; }
-  footer .contact .text-field:first-of-type {
-    padding-left: 0px;
-    padding-right: 6px; }
-  footer .contact .text-view {
-    padding-top: 12px; }
-  footer .contact input {
-    width: 100%;
-    height: 50px;
-    padding: 12px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    color: white;
-    box-sizing: border-box;
-    border: 2px rgba(255, 255, 255, 0.2) solid;
-    -webkit-transition: border 0.3s;
-    -moz-transition: border 0.3s;
-    -ms-transition: border 0.3s;
-    -o-transition: border 0.3s;
-    transition: border 0.3s; }
-    footer .contact input::placeholder {
-      color: rgba(255, 255, 255, 0.3); }
-    footer .contact input::-ms-input-placeholder {
-      color: rgba(255, 255, 255, 0.3); }
-    footer .contact input:-ms-input-placeholder {
-      color: rgba(255, 255, 255, 0.3); }
-  footer .contact input:focus {
-    border: 2px rgba(255, 255, 255, 0.5) solid; }
-  footer .contact textarea {
-    width: 100%;
-    height: 140px;
-    padding: 12px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    color: white;
-    box-sizing: border-box;
-    resize: none;
-    border: 2px rgba(255, 255, 255, 0.2) solid;
-    -webkit-transition: border 0.3s;
-    -moz-transition: border 0.3s;
-    -ms-transition: border 0.3s;
-    -o-transition: border 0.3s;
-    transition: border 0.3s; }
-    footer .contact textarea::placeholder {
-      color: rgba(255, 255, 255, 0.3); }
-    footer .contact textarea::-ms-input-placeholder {
-      color: rgba(255, 255, 255, 0.3); }
-    footer .contact textarea:-ms-input-placeholder {
-      color: rgba(255, 255, 255, 0.3); }
-  footer .contact textarea:focus {
-    border: 2px rgba(255, 255, 255, 0.5) solid; }
-  footer .contact button {
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: white;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    background-color: #353c6b; }
+  footer .contact {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    footer .contact .text-field {
+      float: left;
+      width: 50%;
+      padding-left: 6px;
+      padding-right: 0px;
+      box-sizing: border-box; }
+    footer .contact .text-field:first-of-type {
+      padding-left: 0px;
+      padding-right: 6px; }
+    footer .contact .text-view {
+      padding-top: 12px; }
+    footer .contact input {
+      width: 100%;
+      height: 50px;
+      padding: 12px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: white;
+      box-sizing: border-box;
+      border: 2px rgba(255, 255, 255, 0.2) solid;
+      -webkit-transition: border 0.3s;
+      -moz-transition: border 0.3s;
+      -ms-transition: border 0.3s;
+      -o-transition: border 0.3s;
+      transition: border 0.3s; }
+      footer .contact input::placeholder {
+        color: rgba(255, 255, 255, 0.3); }
+      footer .contact input::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.3); }
+      footer .contact input:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.3); }
+    footer .contact input:focus {
+      border: 2px rgba(255, 255, 255, 0.5) solid; }
+    footer .contact textarea {
+      width: 100%;
+      height: 140px;
+      padding: 12px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: white;
+      box-sizing: border-box;
+      resize: none;
+      border: 2px rgba(255, 255, 255, 0.2) solid;
+      -webkit-transition: border 0.3s;
+      -moz-transition: border 0.3s;
+      -ms-transition: border 0.3s;
+      -o-transition: border 0.3s;
+      transition: border 0.3s; }
+      footer .contact textarea::placeholder {
+        color: rgba(255, 255, 255, 0.3); }
+      footer .contact textarea::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.3); }
+      footer .contact textarea:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.3); }
+    footer .contact textarea:focus {
+      border: 2px rgba(255, 255, 255, 0.5) solid; }
+    footer .contact button {
+      padding: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      background-color: #353c6b; }
   footer .separator {
     width: 60px;
     height: 2px;
@@ -257,11 +265,12 @@ footer {
     background-color: rgba(255, 255, 255, 0.2); }
 
 @media (max-width: 960px) {
-  .content {
-    display: block;
-    background: #000; }
-    .content .column {
-      width: 100%; } }
+  footer .content {
+    flex-direction: column; }
+    footer .content .column {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px; } }
 
 .social-item.fb {
   background-image: url("images/social_fb.svg"); }
