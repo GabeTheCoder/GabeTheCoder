@@ -8,8 +8,8 @@
                         <p>The Socials</p>
                         <div class="separator"></div>
                         <ul>
-                            <li><a href="https://www.google.com"><div class="social-item facebook"></div></a></li>
-                            <li><a href="https://www.google.com"><div class="social-item facebook"></div></a></li>
+                            <li><a href="https://www.google.com"><div class="social-item fb"></div></a></li>
+                            <li><a href="https://www.google.com"><div class="social-item yt"></div></a></li>
                             <li><a href="https://www.google.com"><div class="social-item facebook"></div></a></li>
                             <li><a href="https://www.google.com"><div class="social-item facebook"></div></a></li>
                             <li><a href="https://www.google.com"><div class="social-item facebook"></div></a></li>
