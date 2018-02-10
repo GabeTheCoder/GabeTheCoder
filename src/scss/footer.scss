@@ -41,6 +41,11 @@ footer {
         ul {
             list-style-type: none;
 
+            li {
+                display: inline-block;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
             li a {
                 font-family: 'Montserrat', sans-serif;
                 font-size: 15px;
@@ -49,10 +54,15 @@ footer {
                 line-height: 36px;
                 letter-spacing: 4px;
                 text-transform: uppercase;
+            }
+            .social-item {
+                width: 36px;
+                height: 36px;
                 opacity: 0.8;
+                background: rgb(0, 0, 0);
                 @include transition(opacity 0.3s);
             }
-            li a:hover {
+            li a:hover .social-item {
                 opacity: 1.0;
             }
         }

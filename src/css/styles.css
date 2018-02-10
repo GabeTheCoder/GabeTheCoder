@@ -107,6 +107,10 @@ footer {
     margin-bottom: 20px; }
     footer .social ul {
       list-style-type: none; }
+      footer .social ul li {
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px; }
       footer .social ul li a {
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
@@ -114,14 +118,18 @@ footer {
         color: white;
         line-height: 36px;
         letter-spacing: 4px;
-        text-transform: uppercase;
+        text-transform: uppercase; }
+      footer .social ul .social-item {
+        width: 36px;
+        height: 36px;
         opacity: 0.8;
+        background: black;
         -webkit-transition: opacity 0.3s;
         -moz-transition: opacity 0.3s;
         -ms-transition: opacity 0.3s;
         -o-transition: opacity 0.3s;
         transition: opacity 0.3s; }
-      footer .social ul li a:hover {
+      footer .social ul li a:hover .social-item {
         opacity: 1.0; }
   footer .links {
     margin-top: 20px;
