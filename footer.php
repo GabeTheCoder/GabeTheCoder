@@ -8,12 +8,12 @@
                         <p>The Socials</p>
                         <div class="separator"></div>
                         <ul>
-                            <li><a href="https://www.google.com"><div class="social-item fb"></div></a></li>
-                            <li><a href="https://www.google.com"><div class="social-item yt"></div></a></li>
-                            <li><a href="https://www.google.com"><div class="social-item insta"></div></a></li>
-                            <li><a href="https://www.google.com"><div class="social-item twtr"></div></a></li>
-                            <li><a href="https://www.google.com"><div class="social-item in"></div></a></li>
-                            <li><a href="https://www.google.com"><div class="social-item github"></div></a></li>
+                            <li><a href="https://www.facebook.com/people/Gabriel-Pierannunzi/100009055900759" target="_blank"><div class="social-item fb"></div></a></li>
+                            <li><a href="https://www.youtube.com/gabethecoder" target="_blank"><div class="social-item yt"></div></a></li>
+                            <li><a href="https://www.instagram.com/gabethecoder/" target="_blank"><div class="social-item insta"></div></a></li>
+                            <li><a href="https://twitter.com/gabecoder" target="_blank"><div class="social-item twtr"></div></a></li>
+                            <li><a href="https://www.linkedin.com/in/gabriel-pierannunzi-95949aa6" target="_blank"><div class="social-item in"></div></a></li>
+                            <li><a href="https://github.com/GabeTheCoder" target="_blank"><div class="social-item github"></div></a></li>
                         </ul>
                     </div>
                     <div class="links">
