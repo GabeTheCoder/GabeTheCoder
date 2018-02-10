@@ -41,6 +41,9 @@
 a {
   text-decoration: none; }
 
+button {
+  cursor: pointer; }
+
 .clear {
   clear: both; }
 
@@ -112,9 +115,11 @@ header {
 
 footer {
   width: 100%;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  overflow: auto;
   background-color: #46508c; }
+  footer .primary-container {
+    margin-top: 48px;
+    margin-bottom: 36px; }
   footer .title {
     height: 50px;
     font-family: 'Montserrat', sans-serif;
@@ -249,20 +254,45 @@ footer {
     footer .contact textarea:focus {
       border: 2px rgba(255, 255, 255, 0.5) solid; }
     footer .contact button {
-      padding: 20px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      padding: 16px;
       font-family: 'Montserrat', sans-serif;
       font-size: 15px;
       font-weight: 600;
       color: white;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
       text-transform: uppercase;
-      background-color: #353c6b; }
+      background-color: transparent;
+      opacity: 0.7;
+      -webkit-transition: opacity 0.3s;
+      -moz-transition: opacity 0.3s;
+      -ms-transition: opacity 0.3s;
+      -o-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+    footer .contact button:hover {
+      opacity: 1.0; }
   footer .separator {
     width: 60px;
     height: 2px;
     margin-top: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     background-color: rgba(255, 255, 255, 0.2); }
+  footer .footnote {
+    width: 100%;
+    height: 64px;
+    background-color: #353c6b; }
+    footer .footnote .primary-container {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    footer .footnote p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 64px;
+      letter-spacing: 0px;
+      text-transform: none; }
 
 @media (max-width: 960px) {
   footer .content {

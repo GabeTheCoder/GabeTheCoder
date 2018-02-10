@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php the_title(); ?></title>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,500i,600" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:500,500i,600" rel="stylesheet"> -->
     <?php wp_head(); ?>
 </head>
 <body>

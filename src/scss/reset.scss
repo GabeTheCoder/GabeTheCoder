@@ -20,7 +20,7 @@
     background: transparent;
     outline: none;
     border: none;
-}  
+}
 
 *::selection {
     background-color: rgb(44, 43, 58);
@@ -28,6 +28,10 @@
 
 a {
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 .clear {
