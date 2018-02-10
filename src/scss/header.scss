@@ -56,6 +56,9 @@ header {
 @media (max-width: 760px) {
     header {
         nav {
+            .title {
+                font-size: 19px;
+            }
             ul {
                 float: left;
                 display: none;

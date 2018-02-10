@@ -14,7 +14,7 @@
     <header id="header">
         <div class="primary-container">
             <nav>
-                <a href="/"><div class="title">Gabe The Coder</div></a>
+                <a href="/"><h1 class="title">Gabe The Coder</h1></a>
                 <button class="toggle-menu" onclick="toggleMenu()"></button>
                 <ul>
                     <li><a href="/blog">Blog</a></li>

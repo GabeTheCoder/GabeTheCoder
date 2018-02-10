@@ -3,8 +3,7 @@
 $heading-font: 'AvenirNext';
 
 // Colors
-$base-color: #777;
-$text-color: rgb(65, 65, 65);
+$background-color: rgb(255, 255, 255);
 $primary-color: rgba(70, 80, 140, 1.0);
 $secondary-color: rgba(53, 60, 107, 1.0);
 
@@ -17,4 +16,6 @@ $secondary-color: rgba(53, 60, 107, 1.0);
 @import 'containers';
 @import 'slideshow';
 
-
+body {
+    background-color: $background-color;
+}
