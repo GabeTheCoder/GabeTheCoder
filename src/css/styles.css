@@ -389,7 +389,12 @@ footer {
       height: 2px;
       margin-top: 16px;
       margin-bottom: 24px;
-      background-color: rgba(255, 255, 255, 0.3); }
+      background-color: rgba(255, 255, 255, 0.3);
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
     .slideshow .slide .info p {
       margin-top: 2px;
       margin-bottom: 2px;
@@ -411,6 +416,9 @@ footer {
   background-color: rgba(34, 34, 34, 0); }
   .slideshow:hover .slide .overlay .info p {
     color: white; }
+  .slideshow:hover .slide .overlay .info .separator {
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.7); }
 
 @media (max-width: 1023px) {
   .slideshow .overlay .info {
