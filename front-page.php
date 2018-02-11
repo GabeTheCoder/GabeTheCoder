@@ -21,19 +21,35 @@
                 </a>
             </div>
 
+            <!-- <Section>, <Article>, <Aside>? -->
+
             <div class="posts">
                 <div class="primary-container">
-                    <?php $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => -1)); ?>
+                    <section>
+                        <?php $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 5)); ?>
 
-                    <?php if ( $query->have_posts() ) : ?>
-                        <ul>
-                            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                                <li>
-                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                </li>
-                            <?php endwhile; ?>
-                        </ul>
-                    <?php endif; ?>
+                        <?php if ( $query->have_posts() ) : ?>
+                            <ul>
+                                <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                                    <li>
+                                        <a href="<?php the_permalink(); ?>">
+                                            <div class="item">
+                                                <div class="thumbnail" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
+                                                <div class="info">
+                                                    <h2><?php the_title(); ?></h2>
+                                                    <time><?php the_date(); ?></time>
+                                                    <p><?php the_excerpt(); ?></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                <?php endwhile; ?>
+                            </ul>
+                        <?php endif; ?>
+                    </section>
+                    <aside>
+                        lj
+                    </aside>
                 </div>
             </div>
 
