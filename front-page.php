@@ -21,8 +21,6 @@
                 </a>
             </div>
 
-            <!-- <Section>, <Article>, <Aside>? -->
-
             <div class="posts">
                 <div class="primary-container">
                     <section>

@@ -7,6 +7,7 @@ $background-color: rgb(255, 255, 255);
 $primary-color: rgba(70, 80, 140, 1.0);
 $secondary-color: rgba(53, 60, 107, 1.0);
 $highlight-color: rgba(97, 110, 191, 1.0);
+$category-highlight-color: rgba(123, 135, 215, 1.0);
 
 @import 'mixins';
 
@@ -17,6 +18,8 @@ $highlight-color: rgba(97, 110, 191, 1.0);
 @import 'containers';
 @import 'slideshow';
 @import 'posts';
+@import 'post';
+@import 'categories';
 
 body {
     background-color: $background-color;

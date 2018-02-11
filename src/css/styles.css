@@ -575,5 +575,54 @@ footer {
       margin-top: 16px;
       margin-left: 0px; } }
 
+.post {
+  padding-top: 56px;
+  padding-bottom: 56px; }
+
+.categories {
+  padding-top: 0px;
+  padding-bottom: 24px;
+  border-bottom: 1px #f0f0f0 solid; }
+  .categories .info h1 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    color: #454545;
+    line-height: 32px; }
+  .categories .info a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #616ebf;
+    line-height: 24px; }
+  .categories ul li {
+    display: inline-block;
+    margin-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: none; }
+    .categories ul li .category {
+      padding-top: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 8px;
+      background-color: #f3f3f3;
+      border-radius: 3px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #bebebe;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      -webkit-transition: color 0.3s;
+      -moz-transition: color 0.3s;
+      -ms-transition: color 0.3s;
+      -o-transition: color 0.3s;
+      transition: color 0.3s; }
+    .categories ul li .category:hover {
+      color: #7b87d7; }
+
 body {
   background-color: white; }

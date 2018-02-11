@@ -5,22 +5,17 @@
     <div class="posts">
         <div class="primary-container">
             <section>
-                <div class="categories">
-                    <?php $categories = get_categories(); ?>
+                <?php $category_ID = get_category(get_query_var('cat'))->cat_ID ?>
 
-                    <ul>
-                        <?php foreach ( $categories as $category ) : ?>
-                            <li>
-                                <a href="<?php echo get_category_link($category->term_id); ?>">
-                                    <div class="category"><?php echo $category->name; ?></div>
-                                </a>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
+                <div class="categories">
+                    <div class="info">
+                        <h1><?php echo 'Topic: ' . get_cat_name($category_ID); ?></h1>
+                        <a href="/blog">Back To Blog</a>
+                    </div>
                 </div>
 
                 <div class="blogs">
-                    <?php $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 5)); ?>
+                    <?php $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 5, 'cat' => $category_ID)); ?>
 
                     <?php if ( $query->have_posts() ) : ?>
                         <ul>
@@ -44,7 +39,7 @@
                     <?php endif; ?>
                 </div>
             </section>
-            <!-- <aside></aside>  -->
+            <!-- <aside></aside> -->
         </div>
     </div>
 
