@@ -7,8 +7,10 @@
                 <div class="primary-container">
                     <?php while ( have_posts() ) : the_post();?>
                         <article>
-                            <h1><?php the_title(); ?></h1>
-                            <p><?php the_content(); ?></p>
+                            <div class="info">
+                                <h1><?php the_title(); ?></h1>
+                                <p><?php the_content(); ?></p>
+                            </div>
                         </article>
                         <!-- <aside></aside> -->
                     <?php endwhile; ?>
