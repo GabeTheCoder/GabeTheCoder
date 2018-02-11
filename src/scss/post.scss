@@ -5,13 +5,45 @@
 
     .info {
         h1 {
-            margin-top: 4px;
-            margin-bottom: 4px;
+            margin-top: 8px;
+            margin-bottom: 8px;
             font-family: 'Montserrat', sans-serif;
             font-size: 32px;
             font-weight: 500;
             color: rgb(69, 69, 69);
             line-height: 44px;
+        }
+
+        h1:hover {
+            color: $highlight-color;
+        }
+
+        time {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            color: rgb(180, 180, 180);
+            line-height: 21px;
+        }
+
+        .separator {
+            width: 60px;
+            height: 3px;
+            margin-top: 24px;
+            margin-bottom: 32px;
+            background-color: $primary-color;
+        }
+
+        p {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            color: rgb(100, 100, 100);
+            line-height: 28px;
         }
     }
 }

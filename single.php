@@ -8,7 +8,9 @@
                     <?php while ( have_posts() ) : the_post();?>
                         <article>
                             <div class="info">
-                                <h1><?php the_title(); ?></h1>
+                                <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
+                                <time><?php the_date(); ?></time>
+                                <div class="separator"></div>
                                 <p><?php the_content(); ?></p>
                             </div>
                         </article>
