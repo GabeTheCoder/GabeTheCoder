@@ -49,6 +49,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="scripts.js"></script>
 
     <script type="text/javascript">
         WebFontConfig = {
@@ -63,6 +64,6 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wf, s);
         })();
-    </script> 
+    </script>
 </body>
 </html>
