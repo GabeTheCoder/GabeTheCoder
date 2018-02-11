@@ -36,9 +36,11 @@
                                             <div class="item">
                                                 <div class="thumbnail" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
                                                 <div class="info">
+                                                    <h3><?php $category = get_the_category(); echo $category[0]->cat_name; ?></h3>
                                                     <h2><?php the_title(); ?></h2>
                                                     <time><?php the_date(); ?></time>
                                                     <p><?php the_excerpt(); ?></p>
+                                                    <div class="read-more">Read More</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -47,9 +49,7 @@
                             </ul>
                         <?php endif; ?>
                     </section>
-                    <aside>
-                        lj
-                    </aside>
+                    <!-- <aside></aside> -->
                 </div>
             </div>
 
