@@ -21,6 +21,22 @@
                 </a>
             </div>
 
+            <div class="posts">
+                <div class="primary-container">
+                    <?php $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => -1)); ?>
+
+                    <?php if ( $query->have_posts() ) : ?>
+                        <ul>
+                            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                                <li>
+                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                </li>
+                            <?php endwhile; ?>
+                        </ul>
+                    <?php endif; ?>
+                </div>
+            </div>
+
         </main>
     </div>
 

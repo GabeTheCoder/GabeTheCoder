@@ -48,9 +48,6 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="scripts.js"></script>
-
     <script type="text/javascript">
         WebFontConfig = {
             google: { families: [ 'Montserrat:500,500i,600:latin' ] }

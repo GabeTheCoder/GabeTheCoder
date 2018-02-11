@@ -13,7 +13,6 @@
         <?php endif; ?>
     </title>
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:500,500i,600" rel="stylesheet"> -->
     <?php wp_head(); ?>
 </head>
 <body>
