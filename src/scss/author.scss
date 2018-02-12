@@ -1,0 +1,73 @@
+
+.author {
+    padding: 24px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    .photo {
+        width: 72px;
+        height: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+        border-radius: 36px;
+        background-color: rgb(230, 230, 230);
+        background-size: cover;
+        background-position: center;
+    }
+
+    h2 {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        color: rgb(69, 69, 69);
+        line-height: 44px;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(126, 126, 126);
+        line-height: 26px;
+    }
+
+    .social {
+        margin-top: 16px;
+        margin-bottom: 2px;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            li a {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+                color: rgba(255, 255, 255, 1.0);
+                line-height: 36px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+            }
+            .social-item {
+                width: 36px;
+                height: 36px;
+                opacity: 0.6;
+                @include transition(opacity 0.3s);
+            }
+            li a:hover .social-item {
+                opacity: 1.0;
+            }
+        }
+    }
+}

@@ -310,6 +310,24 @@ footer {
 .social-item.github {
   background-image: url("images/social_github.svg"); }
 
+.social-item.fb-dark {
+  background-image: url("images/social_fb_dark.svg"); }
+
+.social-item.yt-dark {
+  background-image: url("images/social_yt_dark.svg"); }
+
+.social-item.insta-dark {
+  background-image: url("images/social_insta_dark.svg"); }
+
+.social-item.twtr-dark {
+  background-image: url("images/social_twtr_dark.svg"); }
+
+.social-item.in-dark {
+  background-image: url("images/social_in_dark.svg"); }
+
+.social-item.github-dark {
+  background-image: url("images/social_github_dark.svg"); }
+
 .primary-container {
   width: 1000px;
   margin-left: auto;
@@ -578,6 +596,18 @@ footer {
 .post {
   padding-top: 56px;
   padding-bottom: 56px; }
+  .post .primary-container {
+    display: flex;
+    flex-direction: row; }
+    .post .primary-container article {
+      flex-grow: 1;
+      flex-shrink: 1; }
+    .post .primary-container aside {
+      width: 348px;
+      margin-left: 32px;
+      flex-basis: auto;
+      flex-grow: 0;
+      flex-shrink: 0; }
   .post .info h1 {
     margin-top: 8px;
     margin-bottom: 8px;
@@ -601,15 +631,44 @@ footer {
     height: 3px;
     margin-top: 24px;
     margin-bottom: 32px;
-    background-color: #46508c; }
+    background-color: #616ebf; }
   .post .info p {
     margin-top: 8px;
     margin-bottom: 8px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 500;
     color: #646464;
     line-height: 28px; }
+
+@media (max-width: 1023px) {
+  .post {
+    display: block; }
+    .post .primary-container {
+      display: block; }
+      .post .primary-container aside {
+        margin-top: 36px;
+        margin-left: 0px; } }
+
+@media (max-width: 1023px) {
+  .post {
+    padding-top: 24px;
+    padding-bottom: 24px; }
+    .post .primary-container {
+      display: block;
+      margin-top: 8px;
+      margin-bottom: 8px; }
+      .post .primary-container .info h1 {
+        font-size: 26px;
+        line-height: 36px; }
+      .post .primary-container .info time {
+        font-size: 15px;
+        line-height: 26px; }
+      .post .primary-container .info p {
+        font-size: 17px;
+        line-height: 28px; }
+      .post .primary-container aside {
+        width: 100%; } }
 
 .categories {
   padding-top: 0px;
@@ -655,6 +714,67 @@ footer {
       transition: color 0.3s; }
     .categories ul li .category:hover {
       color: #7b87d7; }
+
+.author {
+  padding: 24px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  box-sizing: border-box; }
+  .author .photo {
+    width: 72px;
+    height: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    border-radius: 36px;
+    background-color: #e6e6e6;
+    background-size: cover;
+    background-position: center; }
+  .author h2 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    color: #454545;
+    line-height: 44px;
+    text-align: center; }
+  .author p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #7e7e7e;
+    line-height: 26px; }
+  .author .social {
+    margin-top: 16px;
+    margin-bottom: 2px; }
+    .author .social ul {
+      list-style-type: none; }
+      .author .social ul li {
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px; }
+      .author .social ul li a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        line-height: 36px;
+        letter-spacing: 4px;
+        text-transform: uppercase; }
+      .author .social ul .social-item {
+        width: 36px;
+        height: 36px;
+        opacity: 0.6;
+        -webkit-transition: opacity 0.3s;
+        -moz-transition: opacity 0.3s;
+        -ms-transition: opacity 0.3s;
+        -o-transition: opacity 0.3s;
+        transition: opacity 0.3s; }
+      .author .social ul li a:hover .social-item {
+        opacity: 1.0; }
 
 body {
   background-color: white; }

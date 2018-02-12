@@ -14,7 +14,9 @@
                                 <p><?php the_content(); ?></p>
                             </div>
                         </article>
-                        <!-- <aside></aside> -->
+                        <aside>
+                            <?php get_template_part( 'author' ); ?>
+                        </aside>
                     <?php endwhile; ?>
                 </div>
             </div>
