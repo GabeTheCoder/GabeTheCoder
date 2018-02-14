@@ -632,14 +632,92 @@ footer {
     margin-top: 24px;
     margin-bottom: 32px;
     background-color: #616ebf; }
-  .post .info p {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    color: #646464;
-    line-height: 28px; }
+  .post .entry {
+    overflow: hidden; }
+    .post .entry h2 {
+      margin-top: 24px;
+      margin-bottom: 12px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 44px; }
+    .post .entry p {
+      margin-top: 0px;
+      margin-bottom: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: #3b3b3b;
+      line-height: 36px; }
+    .post .entry strong {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 36px; }
+    .post .entry a {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: #616ebf;
+      line-height: 36px; }
+    .post .entry ul {
+      margin-top: 0px;
+      margin-left: 12px;
+      margin-bottom: 16px;
+      list-style-position: inside; }
+      .post .entry ul li {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #3b3b3b;
+        line-height: 36px; }
+    .post .entry code {
+      display: block;
+      padding: 16px;
+      border-radius: 3px;
+      background-color: #f7f7f7;
+      font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+      font-size: 14px;
+      color: #24292e;
+      line-height: 24px; }
+    .post .entry img.alignleft {
+      float: left;
+      margin-top: 8px;
+      margin-right: 24px;
+      margin-bottom: 16px; }
+    .post .entry img.alignright {
+      float: right;
+      margin-top: 8px;
+      margin-left: 24px;
+      margin-bottom: 16px; }
+    .post .entry img.aligncenter {
+      display: block;
+      margin-top: 8px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 18px; }
+    .post .entry img.full {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-top: 8px;
+      margin-bottom: 18px; }
+    .post .entry .video {
+      position: relative;
+      padding-bottom: 56.25%;
+      /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+      margin-bottom: 16px; }
+    .post .entry .video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
 
 @media (max-width: 1023px) {
   .post {

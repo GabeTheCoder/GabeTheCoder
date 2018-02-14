@@ -1,4 +1,4 @@
-    <footer>
+    <footer id="footer">
         <div class="primary-container">
             <a href="/"><div class="title">Gabe The Coder</div></a>
 
@@ -50,7 +50,7 @@
 
     <script type="text/javascript">
         WebFontConfig = {
-            google: { families: [ 'Montserrat:500,500i,600:latin' ] }
+            google: { families: [ 'Montserrat:400,500,500i,600:latin' ] }
         };
         (function() {
             var wf = document.createElement('script');

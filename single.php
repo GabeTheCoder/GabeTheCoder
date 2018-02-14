@@ -11,7 +11,10 @@
                                 <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
                                 <time><?php the_date(); ?></time>
                                 <div class="separator"></div>
-                                <p><?php the_content(); ?></p>
+                            </div>
+
+                            <div class="entry">
+                                <?php the_content(); ?>
                             </div>
                         </article>
                         <aside>
