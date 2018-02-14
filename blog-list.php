@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="blogs">
-                    <?php $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 5)); ?>
+                    <?php $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 10000)); ?>
 
                     <?php if ( $query->have_posts() ) : ?>
                         <ul>

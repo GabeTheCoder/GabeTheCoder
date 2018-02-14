@@ -4,27 +4,33 @@
 		<main id="main" class="site-main" role="main">
 
             <div class="slideshow">
-                <a href="/info">
-                    <div class="slide">
-                        <div class="background"></div>
-                        <div class="overlay">
-                            <div class="primary-container">
-                                <div class="info">
-                                    <h2>Software Engineering</h2>
-                                    <h1>Introducing The Definitive Career Guide For Full Stack Developers</h1>
-                                    <div class="separator"></div>
-                                    <p>Skyrocket your value as a developer to win clients, influence developers, or get a raise at your software engineering job.</p>
+                <?php $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 1)); ?>
+
+                <?php if ( $query->have_posts() ) : ?>
+                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="slide">
+                                <div class="background" style="background-image: url('<?php the_post_thumbnail_url('full'); ?>');"></div>
+                                <div class="overlay">
+                                    <div class="primary-container">
+                                        <div class="info">
+                                            <h2><?php $category = get_the_category(); echo $category[0]->cat_name; ?></h2>
+                                            <h1><?php the_title(); ?></h1>
+                                            <div class="separator"></div>
+                                            <p><?php the_excerpt(); ?></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </a>
+                        </a>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
 
             <div class="posts">
                 <div class="primary-container">
                     <section>
-                        <?php $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 5)); ?>
+                        <?php $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 7, 'offset' => 1)); ?>
 
                         <?php if ( $query->have_posts() ) : ?>
                             <ul>
