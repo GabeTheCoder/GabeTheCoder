@@ -31,8 +31,8 @@
                     <div class="contact">
                         <p>Get In Touch</p>
                         <div class="separator"></div>
-                        <form action="/send">
-                            <div class="text-field"><input name="name" type="text" placeholder="Name"></input></div>
+                        <form action="/contact">
+                            <div class="text-field"><input name="from" type="text" placeholder="Name"></input></div>
                             <div class="text-field"><input name="email" type="text" placeholder="Email"></input></div><div class="clear"></div>
                             <div class="text-view"><textarea name="message" type="text" placeholder="Message"></textarea></div>
                             <button>Send Message</button>
