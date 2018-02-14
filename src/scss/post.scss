@@ -172,6 +172,20 @@
             width: 100%;
             height: 100%;
         }
+
+        .share-container {
+            margin-top: 24px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            border-top: 1px rgb(230, 230, 230) solid;
+            border-bottom: 1px rgb(230, 230, 230) solid;
+
+            p {
+                display: inline-block;
+                margin-right: 18px;
+                color: rgb(180, 180, 180);
+            }
+        }
     }
 }
 

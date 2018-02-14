@@ -62,5 +62,6 @@
             s.parentNode.insertBefore(wf, s);
         })();
     </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-577b381e0aeb7cc4"></script>
 </body>
 </html>

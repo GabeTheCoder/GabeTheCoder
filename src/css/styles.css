@@ -364,7 +364,6 @@ footer {
       height: 100%;
       background-size: cover;
       background-position: center;
-      background-image: url("https://images.unsplash.com/photo-1494444815173-e6b337c86d49?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=26018129013eb41cc6441433ce32d212&auto=format&fit=crop&w=2550&q=80");
       z-index: 0;
       -webkit-transition: scale 0.64s;
       -moz-transition: scale 0.64s;
@@ -718,6 +717,16 @@ footer {
       left: 0;
       width: 100%;
       height: 100%; }
+    .post .entry .share-container {
+      margin-top: 24px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-top: 1px #e6e6e6 solid;
+      border-bottom: 1px #e6e6e6 solid; }
+      .post .entry .share-container p {
+        display: inline-block;
+        margin-right: 18px;
+        color: #b4b4b4; }
 
 @media (max-width: 1023px) {
   .post {
